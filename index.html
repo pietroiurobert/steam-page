@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/second-navbar.css">
+        <link rel="stylesheet" href="css/sidebar.css">
+        <link rel="stylesheet" href="css/center-container.css">
+        <link rel="stylesheet" href="css/featured-container.css">
+
+        <script src="./js/game-img-crossfade.js" defer></script>
+        <script src="./js/container-hover.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="navbar-content">
+                    <div id="content1">
+                        <img id='logo' src='./images/Steam.svg'>
+                        <li id="active"> STORE </li>
+                            <div class="drop-down-store">
+                                <li> Home </li>
+                                <li> Discovery Queue </li>
+                                <li> Wishlist </li>
+                                <li>Points Shop </li>
+                                <li>News </li>
+                                <li>Stats </li>
+                                <li>About </li>        
+                            </div>        
+                        <li> COMMUNITY </li>
+                        <li> CASA PARIURI </li>
+                        <li> CHAT </li>
+                        <li> SUPPORT </li>
+                    </div>
+
+                    <div id="global-actions">
+                        <button id="install-steam"> <i class="bi bi-cloud-arrow-down-fill"></i> Install Steam </button>
+                        <button id="bell"> <i class="bi bi-bell-fill"></i> </button>
+                        <div class="user-container">
+                            <p> CASA PARIURI  <i class="bi bi-caret-down-fill" style="padding-top: 2px; padding-left:2px;"></i>  </p>
+                            <p style="margin-right: 10px;"> 1,06€ </p>
+                        </div>
+                        <img id="user-photo" src="./images/user.jpg">
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="main-container">
+        <div class="container">
+            <div class="sidebar">
+
+                <div class="deck-container">
+                    <img id="steamdeck" src="./images/deck.png">
+                    <h1 class="steam-deck-h1"> STEAM DECK </h1>
+                    <p> Get Yours Now </p>
+                </div>
+                <div class="gift-container">
+                    <img id="giftcards" src="./images/giftcards.png">
+                    <h1 class="giftcards-h1"> STEAM GIFT CARDS </h1>
+                    <p> Give the Gift of Games </p>
+                </div>
+
+                <div class="sidebar-content">
+                    <div class="recently-viewed">
+                        <h1> RECENTLY VIEWED </h1>
+                        <p> Apex Legends™ </p>
+                    </div>
+                    
+                    <div class="others">
+                        <h1> YOUR TAGS </h1>
+                        <p> Vehicular Combat </p>
+                        <p> Open World Survival Craft </p>
+                        <p> World War II </p>
+                        <p> Combat </p>
+                        <p> Military </p>
+
+                        <h1> RECOMMENDED </h1>
+                        <p> By Friends </p>
+                        <p> By Curators </p>
+                        <p> Tags </p>
+
+                        <h1> BROWSE CATEGORIES </h1>
+                        <p> Top Sellers </p>
+                        <p> New Releases </p>
+                        <p> Upcoming </p>
+                        <p> Specials </p>
+                        <p> VR Titles </p>
+                        <p> Controller-Friendly </p>
+                        <p> Great on Deck </p>
+
+                        <h1> HARDWARE </h1>
+                        <p> Steam Deck </p>
+                        <p> Steam Deck Dock </p>
+                        <p> VR Hardware </p>
+
+                        <h1> BROWSE BY GENRE </h1>
+                        <p> Free to Play </p>
+                        <p> Early Access </p>
+                        <p> Action </p>
+                        <p> Adventure </p>
+                        <p> Casual </p>
+                        <p> Indie </p>
+                        <p> Massively Multiplayer </p>
+                        <p> Racing </p>
+                        <p> RPG </p>
+                        <p> Simulation </p>
+                        <p> Sports </p>
+                        <p> Strategy </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="center-container">
+                <button id="wishlist"> WISHLIST (12) </button>
+                <nav>
+                    <div class="left">
+                        <li> <img src="./images/avatar.jpg"> Your Store </li>
+                        <li> New & Noteworthy </li>
+                        <li> Categories </li>
+                        <li> Points Shop </li>
+                        <li> News </li>
+                        <li> Labs </li>
+                    </div>
+                    <div class="right">
+                        <button id="search-button"> 
+                            <li> search </li>
+                            <!-- <i class="bi bi-search"></i> -->
+                        </button> 
+                    </div>
+                </nav>
+
+                <div class="featured">
+                    <h1 id="featured-h1"> FEATURED & RECOMMENDED </h1>
+
+                    <div class="featured-container">
+                        <img id="main-img-static" src="images/bfv.png">
+                        <img id="main-img" src="images/bfv.png">
+                        <div class="info">
+                            <h1> Battlefield™ V </h1>
+
+                            <div class="grid-info">
+                                <img src="images/grid1.jpg">
+                                <img src="images/grid2.jpg">
+                                <img src="images/grid3.jpg">
+                                <img src="images/grid4.jpg">
+                            </div>
+                            
+                            <h2 id="recommended"> 
+                                <span id="rec"> Recommended </span> because you played games tagged with 
+                            </h2>
+                            
+                            <div class="tags">
+                                <button> World War II </button>
+                                <button> Military </button>
+                                <button> War </button>
+                                <button> Combat </button>
+                            </div>
+
+                            <span id="price"> 49,99€ </span>
+                            <img id="win-logo" src="images/win.png">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <!-- <h1> Flexbox Container </h1>
+        <div class="flexbox-container">
+            <div class="flexbox-item flexbox-item-1"> <h2> 1 </h2> </div>
+            <div class="flexbox-item flexbox-item-2"> <h2> 2 </h2> </div>
+            <div class="flexbox-item flexbox-item-3"> <h2> 3 </h2> </div>
+        </div> --> 
+    </body>
+</html>

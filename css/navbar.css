@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Sans:wght@500&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+* {
+    font-family: "Motiva Sans", Sans-serif;
+
+}
+
+body {
+    margin: 0%;
+    background-image: url('../images/background.png');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+header {
+    background-color: #171a21;
+}
+
+nav {
+    height: 105px;
+    justify-content: center;
+    display: flex;
+}
+
+.navbar-content {
+    width: 940px;
+    justify-content: center;
+    display: flex;
+}
+
+/* responsive navbar */
+@media screen and (max-width: 910px) {
+    nav li, i{
+        display: block;
+    }
+}
+
+#content1 {
+    display: flex;
+    /* X - axis */
+    justify-content: center;
+    /* Y - axis */
+    align-items: center; 
+}
+
+nav li, i {
+    margin-left: 10px;
+    color: #c7d5e0;
+    display: flex;
+    align-items: center;
+
+    font-size: 16px;
+    font-family: "Motiva Sans", "Twemoji", "Noto Sans", Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+#active {
+    color: #4e7ff0;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
+}
+
+nav img,p,li:hover {
+    cursor: pointer;
+}
+
+nav :hover{
+    transition: 200ms;
+    color: whitesmoke;
+}
+
+#logo {
+    border: 0px;
+    width: 176px;
+    height: 44px;
+    margin-right: 5px;
+}
+
+#global-actions {
+    display: flex;
+    margin-top: 5px;
+    margin-right: 0;
+}
+
+#global-actions button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#global-actions p {
+    color: rgb(199, 199, 199);
+    font-size: 11px;
+    display: flex;
+    padding: 0;
+}
+
+#global-actions p i {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+#global-actions :hover{
+    transition: 200ms;
+    color: whitesmoke;
+}
+
+.user-container {
+    display: block;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.user-container i {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.user-container p {
+    margin: auto;
+    margin-bottom: 10px;
+    float: right;
+    clear: right;
+    font-size: 10px;
+}
+
+#user-photo {
+    margin-left: 10px;
+    border: 2px solid #8a8a8a;
+    width: 36px;
+    height: 36px;
+}
+
+#install-steam {
+    border: 0px;
+    width: 120px;
+    height: 23px;
+    background-color: #26292d;
+    color: white;
+}
+
+#install-steam i {
+    margin: 0px;
+    margin-right: 4px;
+    font-size: 10px;
+}
+
+#install-steam:hover{
+    transition: 200ms;
+    background-color: #6d7982;
+    cursor: pointer;
+}
+
+#bell {
+    border: 0px;
+    margin-left: 4px;
+    width: 50px;
+    height: 23px;
+    background-color: #5e5e5f;
+    color: white;
+}
+
+#bell:hover{
+    transition: 200ms;
+    opacity: 50%;
+    cursor: pointer;
+}
+
+#bell i {
+    margin: 0px;
+}
+
+
+.drop-down-store {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+#active:hover .drop-down-store{
+    display: block;
+}
+
+/*  Not related */
+
+.flexbox-container {
+    display: flex;
+
+    position: relative;
+    top: 15em;
+    background-color: #7289da;
+
+
+    justify-content: center;   /* Main axis (X axis) */
+    align-items: center; /* Cross axis (Y axis) */
+
+}
+
+.flexbox-item {
+    border: 3px solid black;
+    margin: 2px;
+    width: 20em;
+    text-align: center;
+}
+
+.flexbox-item:hover{
+    background-color: whitesmoke;
+    transform: translateY(-3px);
+    transition: 500ms linear;
+    text-decoration: underline;
+}
+
+.flexbox-item-1 {
+    background-color: blue;
+    min-height: 9em;
+}
+
+.flexbox-item-2 {
+    background-color: cornflowerblue;
+    min-height: 12em;
+}
+
+.flexbox-item-3 {
+    background-color:blueviolet;
+    min-height: 15em;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
